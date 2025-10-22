@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Style Types Example</title>
+
+    <!-- External Style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Internal Style -->
+    <style>
+        /* Selector: .internal
+           Property: background-color
+           Value: yellow */
+        .internal {
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline Style -->
+    <h2 style="color: red; text-align: left;">
+        This is an Inline Styled Heading
+        <!-- Selector: h2 (inline)
+             Property: color
+             Value: red
+             Property: text-align
+             Value: left -->
+    </h2>
+
+    <!-- Internal Style -->
+    <p class="internal">
+        This paragraph uses internal CSS style.
+    </p>
+
+    <!-- External Style -->
+    <h1>This heading uses external CSS style.</h1>
+    <p>This paragraph also uses external CSS style.</p>
+
+</body>
+</html>

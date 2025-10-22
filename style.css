@@ -1,0 +1,17 @@
+/* External CSS file */
+
+/* Selector: h1
+   Property: color
+   Value: blue */
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+/* Selector: p
+   Property: font-size
+   Value: 16px */
+p {
+    font-size: 16px;
+    color: green;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frames Example</title>
+</head>
+<frameset rows="30%,40%,30%">
+    <!-- First Frame: Image -->
+    <frame srcdoc='
+        <html>
+        <body style="text-align:center;">
+            <img src="https://via.placeholder.com/200x100" alt="Sample Image">
+        </body>
+        </html>
+    ' name="frame1" scrolling="no" noresize>
+    
+    <!-- Second Frame: Paragraph -->
+    <frame srcdoc='
+        <html>
+        <body>
+            <p>
+                This is a sample paragraph inside the second frame. Frames allow a web page
+                to be divided into multiple sections, each displaying different content.
+            </p>
+        </body>
+        </html>
+    ' name="frame2" scrolling="auto" noresize>
+    
+    <!-- Third Frame: Hyperlink -->
+    <frame srcdoc='
+        <html>
+        <body>
+            <p>
+                Visit <a href="https://www.example.com" target="_blank">Example Website</a>
+                for more information.
+            </p>
+        </body>
+        </html>
+    ' name="frame3" scrolling="no" noresize>
+    
+    <!-- Fallback content if frames are not supported -->
+    <noframes>
+        <body>
+            Your browser does not support frames. Please update your browser.
+        </body>
+    </noframes>
+</frameset>
+</html>
